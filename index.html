@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Código proporcionado por el usuario -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ticketmaster</title>
+<title>Ticketmaster Boleto Digital</title>
 <style>
 /* Estilos originales incluidos tal cual */
     body {
@@ -18,7 +17,7 @@
     }
 
     .ticket-card {
-        width: 330px;
+        width: 300px;
         background: white;
         border-radius: 18px;
         overflow: hidden;
@@ -32,8 +31,7 @@
         box-shadow: 0px 14px 34px rgba(0,0,0,0.22);
     }
 
-    .banner {
-        height: 120px;
+    .banner { height: 80px;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -68,12 +66,12 @@
         margin-bottom: 14px;
     }
 
-    .qr-box { position: relative; width: 120px; height: 120px;
+    .qr-box { position: relative; width: 150px; height: 150px;
         background: white;
         border-radius: 12px;
         border: 1px solid #d1d5db;
         padding: 12px;
-        margin: 0 auto 10px;
+        margin: 0 auto 12px;
         overflow: hidden;
         box-shadow: 0px 3px 10px rgba(0,0,0,0.12);
     }
@@ -94,7 +92,7 @@
 
     @keyframes scan { 0% { top: -40px; } 100% { top: 170px; } }
 
-    #qr { width: 100%; height: 100%; position: relative; z-index: 3; image-rendering: pixelated; }
+    #qr { width: 100%; height: 100%; position: relative; z-index: 1; image-rendering: pixelated; image-rendering: pixelated; image-rendering: pixelated; }
 
     .safetix-warning {
         font-size: 11px;
@@ -155,43 +153,35 @@
     60% { left:100%; }
     100% { left:100%; }
 }
+
 </style>
     <link rel="icon" type="image/png" href="https://i.imgur.com/Eiwjdsh.png">
 </head>
 <body>
-</style>
-</head>
-<body>
-
 
 <div class="ticket-card">
-    <div style="width:100%; text-align:center; margin-bottom:0;">
-    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; background:rgba(0,86,179,0.85); color:white; font-weight:600; font-size:16px; padding:12px 18px; border-radius:0; text-align:center; text-shadow:0 2px 6px rgba(0,0,0,0.85);">
-        <div style="font-weight:700; font-size:15px; margin-bottom:8px;">Boleto normal</div>
-        <div style="display:flex; width:100%; justify-content:center; align-items:center; gap:10px; padding-left:10px; justify-content:center; margin-top:10px;">
-<!-- SECCION (más a la izquierda) -->
-<div style="text-align:center; width:25%; margin-left:-25px;">
-    <div style="font-size:14px; font-weight:500;">SECCION</div>
-    <div style="font-size:20px; font-weight:600;">NA-19</div>
+    <div style="width:100%; text-align:left; margin-bottom:0;">
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; background:rgba(0,86,179,0.85); color:white; font-weight:600; font-size:16px; padding:7px 14px; border-radius:0; text-align:center; text-shadow:0 2px 6px rgba(0,0,0,0.85);">
+        <div style="width:100%; text-align:center; font-weight:700; font-size:15px; margin-bottom:8px;">Boleto normal</div>
+        <div style="display:flex; width:100%; justify-content:space-between; align-items:center; gap:10px; padding-left:0; justify-content:space-between; margin-top:10px;">
+<div style="text-align:center; width:25%; margin-left:0;">
+    <div style="font-size:14px; font-weight:500;"></div>
+    <div style="font-size:20px; font-weight:600;">VECINOS</div>
 </div>
-
-<!-- FILA (centrado) -->
 <div style="text-align:center; width:20%; margin-left:0;">
-    <div style="font-size:14px; font-weight:500;">FILA</div>
-    <div style="font-size:20px; font-weight:600;">12</div>
+    <div style="font-size:14px; font-weight:500;"></div>
+    <div style="font-size:20px; font-weight:600;">G5</div>
 </div>
-
-<!-- ASIENTO (más a la derecha) -->
-<div style="text-align:center; width:30%; margin-right:-25px;">
-    <div style="font-size:14px; font-weight:500;">ASIENTO</div>
-    <div style="font-size:20px; font-weight:600;">15</div>
+<div style="text-align:center; width:30%; margin-right:20px;">
+    <div style="font-size:14px; font-weight:500;"></div>
+    <div style="font-size:20px; font-weight:600;">-</div>
 </div>
 </div>
     </div>
 </div>
 <div class="banner" style="background-image:url('https://i.imgur.com/q60WbDs.jpeg'); position:relative; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; padding:8px 0 8px 0;">
     <div style="color:white; font-weight:700; font-size:15px; text-shadow:0 2px 6px rgba(0,0,0,0.8); text-align:center; margin-bottom:4px;">Bad Bunny — DeBí TiRAR MáS FOToS World Tour 2025</div>
-        <div style="color:white; font-weight:500; font-size:13px; text-shadow:0 2px 8px rgba(0,0,0,0.95); text-align:center; ">21 Dic 2025 20:00 \| Estadio GNP Seguros · CDMX</div>
+        <div style="color:white; font-weight:500; font-size:13px; text-shadow:0 2px 8px rgba(0,0,0,0.95); text-align:center; ">21 Dic 2025 20:00 | Estadio GNP Seguros · CDMX</div>
     </div>
     <div class="safetix-label-top">BOLETO  DIGITAL</div>
 
@@ -217,7 +207,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 <script>
     const qrCanvas = document.getElementById("qr");
-    const qr = new QRious({ element: qrCanvas, size: 260, level: 'H', value: "SAFE-TIX-INIT" });
+    const qr = new QRious({ element: qrCanvas, size: 150, level: 'H', value: "SAFE-TIX-INIT" });
 
     async function generateToken() {
         const seed = "TM-" + Date.now() + "-" + Math.random();
@@ -274,6 +264,8 @@ Por seguridad, debes esperar <strong>72 horas</strong> antes de añadir un nuevo
 </script>
 </body>
 </html>
+
+
 
 
 
